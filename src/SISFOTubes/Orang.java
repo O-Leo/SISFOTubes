@@ -5,11 +5,8 @@
  */
 package SISFOTubes;
 
-/**
- *
- * @author xxx
- */
 public abstract class Orang {
+    //nyoba nyoba
     String nama;
     long nim;
     public Orang(String nama,long nim){
