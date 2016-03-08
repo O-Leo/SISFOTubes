@@ -10,6 +10,7 @@ package SISFOTubes;
  * @author xxx
  */
 public class Assisten extends Orang {
+    //orang cuy
     TugasBesar tb;
     public Assisten (String nama,long nim){
         super(nama,nim);
