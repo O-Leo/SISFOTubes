@@ -5,10 +5,6 @@
  */
 package SISFOTubes;
 
-/**
- *
- * @author xxx
- */
 public class TugasBesar {
     Dokumentasi[] dokumentasi ;
     Mahasiswa[] member = new Mahasiswa[20];
@@ -42,5 +38,10 @@ public class TugasBesar {
     }
     public Mahasiswa getMember(int i){
         return member[i];
+    }
+    public void TampilDokumen(){
+        for(int i = 0 ; i < 10;i++){
+            System.out.println(i+" "+dokumentasi[i].getJudul());
+        }
     }
 }
