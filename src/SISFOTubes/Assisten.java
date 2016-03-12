@@ -10,5 +10,11 @@ package SISFOTubes;
  * @author xxx
  */
 public class Assisten extends Orang {
-
+    TugasBesar tb;
+    public Assisten (String nama,long nim){
+        super(nama,nim);
+    }
+    public void createTugasBesar(String judul){
+        tb = new TugasBesar(judul);
+    }
 }
