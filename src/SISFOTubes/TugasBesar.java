@@ -6,6 +6,7 @@
 package SISFOTubes;
 
 public class TugasBesar {
+    //testugas
     Dokumentasi[] dokumentasi ;
     Mahasiswa[] member = new Mahasiswa[20];
     String juduldoc;
