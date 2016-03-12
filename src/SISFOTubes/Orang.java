@@ -6,7 +6,8 @@
 package SISFOTubes;
 
 public abstract class Orang {
-    //nyoba nyoba
+    //nyoba nyoba nyoba nyoba
+    int i;
     String nama;
     long nim;
     public Orang(String nama,long nim){

@@ -13,4 +13,7 @@ public class Mahasiswa extends Orang {
     public Mahasiswa (String nama , long nim){
         super(nama,nim);
     }
+    public void TampilDokumen(){
+        
+    }
 }
