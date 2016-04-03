@@ -26,4 +26,8 @@ public abstract class Orang {
     public long getNim(){
         return nim;
     }
+    @Override
+    public String toString(){
+        return nama+nim;
+    }
 }
