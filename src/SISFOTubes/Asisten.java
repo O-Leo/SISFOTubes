@@ -9,12 +9,16 @@ package SISFOTubes;
  *
  * @author xxx
  */
-public class Assisten extends Orang {
+public class Asisten extends Orang{
     TugasBesar tb;
-    public Assisten (String nama,long nim){
+    public Asisten (String nama,long nim){
         super(nama,nim);
     }
     public void createTugasBesar(String judul){
         tb = new TugasBesar(judul);
+    }
+    @Override
+    public String toString(){
+        return nama+nim;
     }
 }

@@ -45,4 +45,8 @@ public class TugasBesar {
             System.out.println(i+" "+dokumentasi[i].getJudul());
         }
     }
+    @Override
+    public String toString(){
+        return juduldoc+judultubes+jummhs+jumdoc;
+    }
 }

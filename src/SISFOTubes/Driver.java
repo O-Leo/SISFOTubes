@@ -9,12 +9,8 @@ package SISFOTubes;
  *
  * @author xxx
  */
-public class Mahasiswa extends Orang {
-    public Mahasiswa (String nama , long nim){
-        super(nama,nim);
-    }
-    @Override
-    public String toString(){
-        return nama+nim;
+public class Driver {
+    public static void main(String[] args) {
+        
     }
 }

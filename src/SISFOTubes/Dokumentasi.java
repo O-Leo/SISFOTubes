@@ -20,4 +20,8 @@ public class Dokumentasi {
     public String getJudul(){
         return judul;
     }
+    @Override
+    public String toString(){
+        return judul;
+    }
 }
