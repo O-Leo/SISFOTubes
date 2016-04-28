@@ -3,18 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SISFOTubes;
+package viewB;
+
+import java.awt.event.ActionListener;
 
 /**
  *
  * @author xxx
  */
-public class Mahasiswa extends Orang {
-    public Mahasiswa (String nama , long nim){
-        super(nama,nim);
-    }
-    @Override
-    public String toString(){
-        return nama+nim;
-    }
+public interface View {
+    public void addListener(ActionListener e);
+    public void viewErrorMsg(String errorMsg);
 }

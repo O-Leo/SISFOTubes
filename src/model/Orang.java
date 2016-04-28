@@ -3,10 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SISFOTubes;
+package model;
 
-public abstract class Orang {
-    //nyoba nyoba nyoba nyoba
+import java.io.Serializable;
+
+public abstract class Orang implements Serializable{
     int i;
     String nama;
     long nim;
@@ -24,7 +25,11 @@ public abstract class Orang {
         return nama;
     }
     public long getNim(){
+        if (nim == 0){
+            return 0;
+        }else{
         return nim;
+        }
     }
     @Override
     public String toString(){

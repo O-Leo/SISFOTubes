@@ -5,11 +5,13 @@
  */
 package model;
 
-public class TugasBesar {
+import java.io.Serializable;
+
+public class TugasBesar implements Serializable{
     Dokumentasi[] dokumentasi ;
     Mahasiswa[] member = new Mahasiswa[20];
-    String juduldoc;
-    String judultubes;
+    String juduldoc ;
+    String judultubes ;
     int jumdoc = 0;
     int jummhs = 0;
     
@@ -17,9 +19,9 @@ public class TugasBesar {
         this.judultubes = judultubes;
         dokumentasi = new Dokumentasi[10];
     }
-    public void addDokumentasi(String juduldoc){
+    public void addDokumentasi(Dokumentasi doc){
         if (jumdoc < 10){
-            dokumentasi[jumdoc].setJudul(juduldoc);
+            dokumentasi[jumdoc] = doc;
             jumdoc++;
         }
         else
@@ -34,14 +36,39 @@ public class TugasBesar {
             System.out.println("Maaf member sudah penuh");
     }
     public Dokumentasi getDokumentasi(int i){
-        return dokumentasi[i];
+        if(dokumentasi[i] != null){
+            return dokumentasi[i];
+        }
+        else return null;
     }
     public Mahasiswa getMember(int i){
-        return member[i];
+        if (member[i] == null){
+            return null;
+        }else{
+            return member[i];
+        }
+    }
+        public Mahasiswa getMemberNim(long nim){
+        int i =0;
+        if (member[i].getNim() == nim ){
+            return member[i];
+        }else{
+            i++;
+        }return null;
+    }
+    public String getNama(){
+        return judultubes;
     }
     public void TampilDokumen(){
         for(int i = 0 ; i < 10;i++){
             System.out.println(i+" "+dokumentasi[i].getJudul());
+        }
+    }
+    public void deletemember(int index){
+        while(member[index] != null){
+            member[index] = member[index+1];
+            jummhs--;
+            index++;
         }
     }
     @Override

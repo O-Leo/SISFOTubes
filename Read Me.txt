@@ -1,0 +1,4 @@
+Aplikasi dibuat oleh kelompok 11 untuk memenuhi tugas PBO.
+
+Aplikasi ini adalah aplikasi yang dapat mengelola suatu tubes besar dimana dapat membantu 
+mahasiswa untuk memilih dan melaksanakan tubes besar yang di berikan oleh assisten
